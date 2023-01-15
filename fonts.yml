@@ -1,0 +1,20 @@
+# Font configuration
+# Hasklig
+# Jet Brains Mono
+# Fira Code
+# Source Code Pro
+# Space Mono with -3 y offset
+# Space Mono Nerd Font
+font:
+  normal:
+    family: Monaco
+    style: Regular
+  bold:
+    family: Monaco
+    style: Regular
+    style: Bold
+  italic:
+    family: Monaco
+    style: Italic
+  bold_italic:
+    family: Monaco

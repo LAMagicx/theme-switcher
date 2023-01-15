@@ -39,7 +39,6 @@ def get_same_colors():
 
 	return list(vim_colors.intersection(ala_colors))
 
-
 def get_current_color_scheme():
 	with open(VIM_CONFIG_FILE_PATH, "r") as f:
 		lines = f.readlines()
@@ -51,10 +50,16 @@ def get_current_color_scheme():
 
 	return 'dash'
 
-def switch_color_scheme():
+def choose_color_scheme():
 	options = get_same_colors()
+	for i, c in enumerate(options):
+		if get_current_color_scheme == c:
+			print(str(i) + " : " + c + " <")
+		else:
+			print(str(i) + " : " + c)
 
-	set_color_scheme(options[(options.index(get_current_color_scheme())+1)%len(options)])
+	color_scheme_index = int(input("choose color scheme : "))%len(options)
+	set_color_scheme(options[color_scheme_index%len(options)])
 
 
 def set_color_scheme(scheme):
@@ -96,6 +101,4 @@ def set_ala_color_scheme(scheme):
 		for line in lines:
 			f.write(line)
 
-if __name__ == "__main__":
-	switch_color_scheme()
-
+choose_color_scheme()
