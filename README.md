@@ -1,4 +1,4 @@
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/LAMagicx/theme-switcher/blob/master/switcher.gif?raw=true)
 
 ## Theme Switcher
 
